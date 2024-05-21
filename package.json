@@ -1,7 +1,7 @@
 {
   "name": "@safwan-1998/file-schema-generation",
-  "author": "squad-dock-logan",
-  "license": "peak.ai",
+  "author": "safwan-1998",
+  "license": "",
   "version": "1.0.0",
   "description": "A package to handle file related operations",
   "main": "./dist/index.js",
