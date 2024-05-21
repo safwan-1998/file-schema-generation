@@ -1,0 +1,1 @@
+# @changesets/file-schema-generation
