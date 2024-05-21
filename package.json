@@ -13,7 +13,8 @@
     "format": "prettier . --write",
     "lint": "tsc --noEmit",
     "build": "rimraf dist && tsc",
-    "precommit": "lint-staged && yarn lint"
+    "precommit": "lint-staged && yarn lint",
+    "release": "yarn build && changeset publish"
   },
   "lint-staged": {
     "*.": "prettier --write"
