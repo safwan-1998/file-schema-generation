@@ -1,5 +1,5 @@
 {
-  "access": "restricted",
+  "access": "public",
   "baseBranch": "main",
   "ignore": [],
   "changelog": [
