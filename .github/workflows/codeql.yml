@@ -1,0 +1,15 @@
+name: CodeQL
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  schedule:
+    # https://crontab.guru/#30_3_*_*_*
+    # At 03:30.
+    - cron: '30 3 * * *'
+
+jobs:
+  codeql:
+    name: CodeQL
+    uses: peak-platform/workflow-engineering/.github/workflows/codeql-sg.yml@main

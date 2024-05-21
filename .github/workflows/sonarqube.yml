@@ -1,0 +1,37 @@
+name: SonarCloud
+on:
+  push:
+    branches: [main]
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  sonarqube:
+    name: sonarqube
+    uses: peak-platform/workflow-engineering/.github/workflows/sonarcloud.yml@main
+    # with:
+      # --------------------------------------------
+      # 1. Add Prisma DB for test
+      # --------------------------------------------
+      # Services using Database would need Prisma for test Run
+      # Below parameter configures prisma file execution - relevant (schema) files required
+
+      # IsPrismaGenerate: 'true'
+
+      # --------------------------------------------
+      # 2. Pin Node version
+      # --------------------------------------------
+      # If not specified it uses default LTS Node version
+      # Below parameter pin Node version
+
+      # NodeBuildVersion: '18.7.1'
+
+      # --------------------------------------------
+      # 3. Node Option Parameter for higher memory 
+      # --------------------------------------------
+      # In some cases, test cases consume huge memory
+      # Below parameter NodeTestOptions will be used to set memory size
+
+      # NodeTestOptions: '--max_old_space_size=8192'
+
+    secrets: inherit

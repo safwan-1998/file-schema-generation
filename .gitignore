@@ -1,0 +1,19 @@
+node_modules/
+dist/
+yarn-error.log
+yarn-debug.log
+.npmrc
+
+# Editor files
+.idea
+.vscode
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# SonarQube
+.scannerwork
+
+# Turborepo
+.turbo

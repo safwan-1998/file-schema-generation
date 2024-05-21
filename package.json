@@ -1,0 +1,27 @@
+{
+  "name": "@peak-ai/file-schema-generation",
+  "author": "squad-dock-logan",
+  "license": "peak.ai",
+  "version": "1.0.0",
+  "description": "A package to handle file related operations",
+  "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepublishOnly": "yarn build",
+    "format": "prettier . --write",
+    "lint": "tsc --noEmit",
+    "build": "rimraf dist && tsc",
+    "precommit": "lint-staged && yarn lint"
+  },
+  "lint-staged": {
+    "*.": "prettier --write"
+  },
+  "devDependencies": {
+    "ts-node": "^10.7.0",
+    "tsconfig-paths": "^4.0.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {}
+}

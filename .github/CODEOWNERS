@@ -1,0 +1,4 @@
+.github/workflows/semantic-pr.yml @peak-platform/admins
+.github/settings.yml              @peak-platform/admins
+.github/stale.yml                 @peak-platform/admins
+* @peak-platform/dock-logan
